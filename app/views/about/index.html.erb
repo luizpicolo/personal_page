@@ -3,10 +3,12 @@
   <div class="publish_date">
     <%= t("updated_in")%>: <time datetime="<%= @about.updated_at %>"> <%= @about.updated_in %></time>
   </div>
+  <% unless @about.image_url.nil? %>
   <figure class="image-left">
     <%= image_tag @about.image_url("thumb") %>
     <figcaption></figcaption>
   </figure>
+  <% end %>
   <p class="text-justif">
     <%= @about.body.html_safe %>
   </p>
