@@ -7,4 +7,4 @@ before_script:
 
 addons:
   code_climate:
-    repo_token: adf08323...
+    repo_token: c58152c6e32fb07aa816fab7350bac1c827763c8bf2a5bdee145c00a01efcbbb

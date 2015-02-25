@@ -1,4 +1,5 @@
 
 # Personal Page
 
-[![Build Status](https://magnum.travis-ci.com/luizpicolo/personal_page.svg?token=Uyvyn65fG5spYivFAqj5&branch=master)](https://magnum.travis-ci.com/luizpicolo/personal_page)
+[![Build Status](https://travis-ci.org/luizpicolo/personal_page.svg)](https://travis-ci.org/luizpicolo/personal_page)
+[![Code Climate](https://codeclimate.com/github/luizpicolo/personal_page/badges/gpa.svg)](https://codeclimate.com/github/luizpicolo/personal_page)
