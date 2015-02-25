@@ -39,7 +39,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'mysql2'
-  gem 'rspec-rails', '~> 3.1.0'
+  gem 'rspec-rails'
   gem "rubycritic", :require => false
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
