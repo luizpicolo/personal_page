@@ -9,7 +9,9 @@
 
     git clone git@github.com:luizpicolo/personal_page.git
     bundle install
-    cp config/database.example.yml config/database.yml # Need change configuration
+
+    # Need change configuration
+    cp config/database.example.yml config/database.yml
     rake db:create
     rake db:migrate
 
