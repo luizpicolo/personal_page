@@ -1,0 +1,20 @@
+// footer
+#footer {
+  margin: 0 auto;
+  width: 960px;
+  border-top: 1px solid $gray-1;
+
+  ul, li {
+    list-style: none;
+    margin-left: -20px;
+
+    a {
+      color: $gray-2;
+      font-size: 13px;
+    }
+  }
+}
+
+.align-link {
+  padding: 0 0 0 270px;
+}

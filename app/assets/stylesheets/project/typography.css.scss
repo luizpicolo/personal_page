@@ -1,0 +1,96 @@
+// typography
+
+
+// reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+address {
+  font-size: 1em;
+  font-style: normal;
+}
+
+small {
+  font-size: 1em;
+}
+
+
+
+// titles
+%title {
+  color: $gray-2;
+}
+
+.title-1 {
+  @extend %title;
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+
+.title-2 {
+  @extend %title;
+  font-size: 15px;
+}
+
+.title-3 {
+  @extend %title;
+  font-size: 26px;
+}
+
+.title-4 {
+  @extend %title;
+}
+
+.title-5 {
+  @extend %title;
+}
+
+.title-6 {
+  @extend %title;
+}
+
+
+// text
+%text {
+
+}
+
+.text-1 {
+  @extend %text;
+}
+
+.text-2 {
+  @extend %text;
+}
+
+.text-3 {
+  @extend %text;
+}
+
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justif {
+  text-align: justify;
+}

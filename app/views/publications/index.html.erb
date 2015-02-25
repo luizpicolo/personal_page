@@ -1,0 +1,16 @@
+<articles class="articles">
+  <h1><%= t('publications') %></h1>
+  <div class="publish_date">
+    <%= t("updated_in")%><time datetime="<%= @publications.last.updated_at %>"> <%= @publications.last.updated_in %></time>
+  </div>
+</articles>
+<% @publications.each do |publication| %>
+<articles class="articles">
+  <h2 class="title-3"><%= publication.title%></h2>
+  <p>
+    <%= publication.description.html_safe %>
+  </p>
+  <p><%= link_to t('original_version'), publication.arquive_url %></p>
+</articles>
+<hr>
+<% end %>

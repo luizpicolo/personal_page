@@ -1,0 +1,32 @@
+pt-BR:
+  activerecord:
+    models:
+      user: "Usuários"
+      article: "Artigos"
+      article_attachment: "Imagens Artigo"
+      category: "Categorias"
+      about: "Quem sou"
+
+    attributes:
+      user:
+        password: "Senha"
+        password_confirmation: "Confirmar senha"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+      article:
+        title: "Título"
+        date_publish: "Data publicação"
+        summary: "Resumo"
+        body: "Texto"
+        article_attachments: "Imagens"
+        categories: "Categorias"
+      category:
+        name: "Nome"
+      article_attachment:
+        title: "Título"
+        image: "Imagem"
+        hightlight: "Em Destaque?"
+      about:
+        title: "Título"
+        image: "Imagem"
+        body: "Texto"

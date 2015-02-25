@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.2.0
+before_script:
+  - cp config/database.example.yml config/database.yml
+  - bundle exec rake db:create db:migrate db:test:prepare
+
+addons:
+  code_climate:
+    repo_token: adf08323...

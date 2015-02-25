@@ -1,0 +1,45 @@
+.articles {
+  border-bottom: 1px solid $gray-1;
+  padding-bottom: 20px;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 200;
+    padding: 20px 0;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .title-link {
+    color: $gray-2 !important;
+  }
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+.image-left {
+  float: left;
+  padding-top: 20px;
+  margin: 0 10px 10px 0;
+}
+
+.image-right {
+  float: right;
+  padding-top: 20px;
+  margin: 0 0 10px 10px;
+}
+
+
+.publish_date {
+  margin: 0 0 20px 0;
+  color: $blue;
+}
+
+.read-more {
+  font-size: 16px;
+}

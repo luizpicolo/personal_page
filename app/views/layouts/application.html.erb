@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%= csrf_meta_tags %>
+
+	<title>Luiz Picolo - <%= @title || "Desenvolvimento Web" %></title>
+
+	<%= favicon_link_tag 'icon.png' %>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'modernizr' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+
+<body>
+	<%= render "layouts/alerts" %>
+	<header id="header" class="clearfix">
+		<div class="col-md-3">
+			<hgroup>
+				<%= link_to root_path do %>
+				<i class="fa fa-cloud"></i>
+				<h1><strong>Luiz</strong> Picolo</h1>
+				<h2><%= t("web_development")%></h2>
+				<% end %>
+			</hgroup>
+		</div>
+		<div class="col-md-9">
+			<nav id="nav">
+				<%= render "layouts/links" %>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<%= yield %>
+	</main>
+
+	<footer id="footer">
+		<div class="row">
+			<div class="col-md-5 align-link">
+				<div class="title-1">
+					<%= t("pages") %>
+				</div>
+				<%= render "layouts/links" %>
+			</div>
+			<div class="col-md-5 align-link">
+				<div class="title-1">
+					<%= t("follow_me")%>
+				</div>
+				<ul>
+					<% Contact.order("title asc").each do |contact|%>
+					<li><%= link_to contact.title, contact.link %></li>
+					<% end %>
+				</ul>
+			</div>
+		</div>
+		<div class="text-center row margin-top margin-bottom title-2">
+			<%= t("created_by")%> Luiz Picolo
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<article class="articles">
+  <h1 class="title-3"><%= t("portfolio") %></h1>
+  <div class="publish_date">
+    <%= t("updated_in")%>: <time datetime="<%= @portfolio.last.updated_at %>"> <%= @portfolio.last.updated_in %></time>
+  </div>
+  <p class="text-justif">
+    O portfolio de um programador, na minha opinião, não deve ser exatamente o produto final dos projetos que o mesmo participou, mas sim o código criado pelo mesmo. Por este motivo, nesta página, estou disponibilizando grande parte dos projetos executados nas linguagem que trabalho.
+  </p>
+  <% @portfolio.each do |work| %>
+    <h2 class="title-1"><%= work.title%></h2>
+    <%= link_to work.link, work.link, :class => "read-more"%>
+  <% end %>
+</article>

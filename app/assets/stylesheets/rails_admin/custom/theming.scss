@@ -1,0 +1,23 @@
+iframe.wysihtml5-sandbox {
+  width: 97.5% !important;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    width: 400px !important;
+}
+
+input.hasDatepicker {
+  width: 150px !important;
+}
+
+input.hasTimepicker {
+  width: 100px !important;
+}

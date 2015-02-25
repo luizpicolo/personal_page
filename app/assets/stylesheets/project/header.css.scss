@@ -1,0 +1,44 @@
+// header
+#header {
+  position: fixed;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px;
+  border-bottom: 1px solid $gray-1;
+  padding: 32px 0 30px;
+  background: #FFF;
+
+  h1 {
+    color: $blue;
+    font-size: 26px;
+    font-weight: 200;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  h2 {
+    font-size: 11px;
+    color: $blue;
+  }
+}
+
+.fa-cloud {
+  color: $blue;
+  float: left;
+  margin: -2px 6px 0 8px;
+  font-size: 5em !important;
+}
+
+#nav {
+  margin-left: 30px;
+
+  li {
+    line-height: 2.2;
+    float: right;
+    font-size: 14px;
+    list-style: none;
+    margin-left: 20px;
+  }
+}

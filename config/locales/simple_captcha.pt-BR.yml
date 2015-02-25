@@ -1,0 +1,8 @@
+pt-BR:
+  simple_captcha:
+    placeholder: "Digite o código da imagem"
+    label: "Digite o texto na caixa a seguir:"
+    refresh_button_text: "Trocar"
+    message:
+      default: "O código não confere com a imagem"
+      user: "A imagem e o código não conferem"
