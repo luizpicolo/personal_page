@@ -10,4 +10,23 @@ class Article < ActiveRecord::Base
   has_many :article_attachments, dependent: :destroy
 
   accepts_nested_attributes_for :article_attachments, :allow_destroy => true
+
+  def markdown
+    options = {
+      fenced_code_blocks: true,
+      no_intra_emphasis: true,
+      lax_html_blocks: true
+    }
+
+    extensions = {
+      autolink: true,
+      superscript: true,
+      disable_indented_code_blocks: true
+    }
+
+    renderer = Redcarpet::Render::HTML.new(options)
+    markdown = Redcarpet::Markdown.new(renderer, extensions)
+
+    markdown.render(self.body).html_safe
+  end
 end

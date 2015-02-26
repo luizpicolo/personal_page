@@ -64,9 +64,7 @@ RailsAdmin.config do |config|
         field :summary
         field :categories
         field :article_attachments
-        field :body, :wysihtml5 do
-          config_options :html => true
-        end
+        field :body
       end
       # show do
       #   field :email

@@ -2,7 +2,6 @@ iframe.wysihtml5-sandbox {
   width: 97.5% !important;
 }
 
-textarea,
 input[type="text"],
 input[type="password"],
 input[type="number"],
@@ -20,4 +19,9 @@ input.hasDatepicker {
 
 input.hasTimepicker {
   width: 100px !important;
+}
+
+textarea {
+  width: 800px !important;
+  height: 800px !important;
 }

@@ -10,7 +10,7 @@
   </figure>
   <% end %>
   <p>
-    <%= @article.body.html_safe %>
+    <%= @article.markdown %>
   </p>
   <%= link_to :back, :class => "read-more" do %>
     <i class="fa fa-long-arrow-left"></i>
