@@ -1,11 +1,6 @@
 <% @articles.each do |article| %>
 <article class="articles">
-  <%= link_to show_article_path(
-        :year => article.date_publish.year,
-        :month => article.date_publish.month,
-        :day => article.date_publish.day,
-        :slug => article.slug
-      ), :class => "title-link" do %>
+  <%= link_to article.link_article, :class => "title-link" do %>
   <h1><%= article.title %></h1>
   <% end %>
   <div class="publish_date">
@@ -20,12 +15,7 @@
   <p>
     <%= article.summary.html_safe %>
   </p>
-  <%= link_to show_article_path(
-        :year => article.date_publish.year,
-        :month => article.date_publish.month,
-        :day => article.date_publish.day,
-        :slug => article.slug
-      ), :class => "read-more" do %>
+  <%= link_to article.link_article, :class => "read-more" do %>
     <%= t("read_more") %>
     <i class="fa fa-long-arrow-right"></i>
   <% end %>
