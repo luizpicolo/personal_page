@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
   include DateHelper
+  include Rails.application.routes.url_helpers
 
   extend FriendlyId
   friendly_id :title, use: :slugged
@@ -30,5 +31,18 @@ class Article < ActiveRecord::Base
     markdown = Redcarpet::Markdown.new(renderer, extensions)
 
     markdown.render(self.body).html_safe
+  end
+
+  def link_article
+    date = self.date_publish
+
+    link = show_article_path(
+      :year => date.year,
+      :month => date.strftime("%m"),
+      :day => date.strftime("%d"),
+      :slug => self.slug
+    )
+
+    link
   end
 end
