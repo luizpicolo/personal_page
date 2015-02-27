@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @articles = Article.all.page(params[:page])
+    @articles = Article.order("date_publish desc").page(params[:page])
   end
 end
