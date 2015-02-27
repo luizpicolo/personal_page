@@ -50,7 +50,7 @@ RSpec.describe Article, :type => :model do
   describe "#link_article" do
     it "should return valid link to article" do
       article = FactoryGirl.create :article, :title => "loren ipsun", :date_publish => "20/10/2015"
-      expect(article.link_article).to eq("/2015/10/20/loren-ipsun")
+      expect(article.link_article).to eq("/2015/10/20/loren-ipsun/")
     end
   end
 end
