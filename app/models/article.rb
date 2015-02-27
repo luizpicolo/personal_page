@@ -41,7 +41,7 @@ class Article < ActiveRecord::Base
       :month => date.strftime("%m"),
       :day => date.strftime("%d"),
       :slug => self.slug
-    )
+    ) << "/"
 
     link
   end
