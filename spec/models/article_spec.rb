@@ -34,4 +34,23 @@ RSpec.describe Article, :type => :model do
   describe "nested attributes" do
     it { should accept_nested_attributes_for(:article_attachments) }
   end
+
+  describe "#markdown" do
+    it "should have a text in the format html '<strong>text</strong>'" do
+      article = FactoryGirl.build :article, :body => "loren ipsun **text** loren ipsun"
+      expect(article.markdown).to include("<strong>text</strong>")
+    end
+
+    it "should have a text in the format html '<em>text</em>'" do
+      article = FactoryGirl.build :article, :body => "loren ipsun *text* loren ipsun"
+      expect(article.markdown).to include("<em>text</em>")
+    end
+  end
+
+  describe "#link_article" do
+    it "should return valid link to article" do
+      article = FactoryGirl.create :article, :title => "loren ipsun", :date_publish => "20/10/2015"
+      expect(article.link_article).to eq("/2015/10/20/loren-ipsun")
+    end
+  end
 end
