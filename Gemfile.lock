@@ -125,6 +125,7 @@ GEM
       warden (~> 1.2.3)
     devise-bootstrap-views (0.0.4)
     diff-lcs (1.2.5)
+    disqus_rails (0.0.6)
     docile (1.1.5)
     equalizer (0.0.9)
     erubis (2.7.0)
@@ -372,6 +373,7 @@ DEPENDENCIES
   database_rewinder
   devise
   devise-bootstrap-views
+  disqus_rails
   factory_girl_rails
   faker
   font-awesome-rails

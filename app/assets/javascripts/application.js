@@ -14,5 +14,6 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require alert_message
+//= require disqus_rails
 //= require main
 //= require turbolinks

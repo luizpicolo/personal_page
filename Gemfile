@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'cloudinary'
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'disqus_rails'
 gem 'friendly_id', '~> 5.0.0'
 gem "font-awesome-rails"
 gem 'jbuilder', '~> 2.0'
