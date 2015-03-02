@@ -1,4 +1,6 @@
 Rails.application.configure do
+  GA.tracker = "UA-21765459-1"
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

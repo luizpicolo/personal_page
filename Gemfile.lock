@@ -150,6 +150,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    google-analytics-rails (0.0.6)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -378,6 +379,7 @@ DEPENDENCIES
   faker
   font-awesome-rails
   friendly_id (~> 5.0.0)
+  google-analytics-rails
   jbuilder (~> 2.0)
   jquery-inputmask-rails
   jquery-rails
