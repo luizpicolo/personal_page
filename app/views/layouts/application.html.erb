@@ -19,6 +19,8 @@
 	<%=
 		display_meta_tags :og => {
 		  :title    => @title,
+			:type			=> "article",
+			:site_name => "Luiz Picolo - Desenvolvimento Web",
 		  :url      => request.original_url,
 			:description => @description
 		}
