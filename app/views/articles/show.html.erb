@@ -1,7 +1,7 @@
 <article class="articles">
   <h1><%= @article.title %></h1>
   <div class="publish_date">
-    <%= t("published_in")%><time datetime="<%= @article.date_publish %>"> <%= @article.published_in %></time>
+    <%= t("published_in")%>: <time datetime="<%= @article.date_publish %>"> <%= @article.published_in %></time>
   </div>
   <% @article.article_attachments.where(:hightlight => false).find_each do |image| %>
   <figure>
