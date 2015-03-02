@@ -16,6 +16,14 @@
 	<%= javascript_include_tag 'modernizr' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+	<%=
+		display_meta_tags :og => {
+		  :title    => @title,
+		  :url      => request.original_url,
+			:description => @description
+		}
+	%>
+
 	<%= disqus_init %>
 </head>
 
