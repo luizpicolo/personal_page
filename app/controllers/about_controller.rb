@@ -3,6 +3,6 @@ class AboutController < ApplicationController
     @about = About.first
 
     @title = "Luiz Picolo - Quem sou"
-    @description = @about.body.first(255)
+    @description = "Saiba um poco mais sobre Luiz Picolo"
   end
 end
