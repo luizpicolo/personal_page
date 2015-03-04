@@ -51,3 +51,44 @@ blockquote {
     margin: 0 0 20px;
     padding: 0 20px;
 }
+
+.authors {
+    margin: 20px 0 10px;
+    border-bottom: 1px solid $gray-1;
+
+    .about-author {
+        display: inline-block;
+        margin-right: 30px;
+
+        .gravatar {
+            border: medium none;
+            border-radius: 50%;
+            box-shadow: none;
+            display: inline-block;
+            height: 80px;
+            margin-right: 10px;
+            vertical-align: sub;
+            width: 80px;
+        }
+
+        .info {
+            display: inline-block;
+            position: relative;
+            top: -10px;
+
+            .name, .job {
+              margin: 0 5px 0;
+              font-size: 15px;
+            }
+
+            .name {
+              font-weight: bold;
+            }
+
+            .social {
+              font-size: 18px;
+              margin-left: 5px;
+            }
+        }
+    }
+}
