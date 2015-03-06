@@ -17,7 +17,6 @@ gem 'friendly_id', '~> 5.0.0'
 gem "font-awesome-rails"
 #gem 'gravatar-ultimate'
 gem 'jbuilder', '~> 2.0'
-gem 'jquery-inputmask-rails'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'libv8', '3.16.14.6'
