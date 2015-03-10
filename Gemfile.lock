@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/konjoot/rails_admin_flatly_theme.git
-  revision: 51e32fe6bf9c048689bc1cec346da4e05a5cb173
-  branch: release_1.0
-  specs:
-    rails_admin_flatly_theme (1.1.0)
-      rails (> 3.1.3)
-
-GIT
   remote: git://github.com/nerian/bootstrap-wysihtml5-rails.git
   revision: c2474e4ae5fab944704939c1b64f7378c21cf47d
   specs:
@@ -55,7 +47,7 @@ GEM
     adamantium (0.2.0)
       ice_nine (~> 0.11.0)
       memoizable (~> 0.4.0)
-    alert_message (1.1.2)
+    alert_message (1.1.3)
     arel (6.0.0)
     ast (2.0.0)
     autoprefixer-rails (5.1.7)
@@ -101,7 +93,7 @@ GEM
     coderay (1.1.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    coffee-rails (4.0.1)
+    coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
     coffee-script (2.3.0)
@@ -146,7 +138,7 @@ GEM
       sexp_processor (~> 4.4)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
-    friendly_id (5.0.5)
+    friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
@@ -161,8 +153,9 @@ GEM
     jbuilder (2.2.11)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
-    jquery-rails (3.1.2)
-      railties (>= 3.0, < 5.0)
+    jquery-rails (4.0.3)
+      rails-dom-testing (~> 1.0)
+      railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
@@ -231,12 +224,12 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_admin (0.6.5)
+    rails_admin (0.6.6)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
       font-awesome-rails (>= 3.0, < 5)
       haml (~> 4.0)
-      jquery-rails (~> 3.0)
+      jquery-rails (>= 3.0, < 5)
       jquery-ui-rails (~> 5.0)
       kaminari (~> 0.14)
       nested_form (~> 0.3)
@@ -244,7 +237,7 @@ GEM
       rails (~> 4.0)
       remotipart (~> 1.0)
       safe_yaml (~> 1.0)
-      sass-rails (~> 4.0)
+      sass-rails (>= 4.0, < 6)
     rails_serve_static_assets (0.0.4)
     rails_stdout_logging (0.0.3)
     railties (4.2.0)
@@ -307,7 +300,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
-    sexp_processor (4.4.5)
+    sexp_processor (4.5.0)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
     simplecov (0.9.2)
@@ -372,7 +365,7 @@ DEPENDENCIES
   carrierwave
   cloudinary
   codeclimate-test-reporter
-  coffee-rails (~> 4.0.0)
+  coffee-rails
   database_rewinder
   devise
   devise-bootstrap-views
@@ -380,7 +373,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   font-awesome-rails
-  friendly_id (~> 5.0.0)
+  friendly_id
   gravatar-ultimate
   jbuilder (~> 2.0)
   jquery-rails
@@ -395,8 +388,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails-i18n
   rails_12factor
-  rails_admin (= 0.6.5)
-  rails_admin_flatly_theme!
+  rails_admin
   randumb
   redcarpet
   rspec-rails (~> 3.1.0)
