@@ -5,4 +5,8 @@ class HomeController < ApplicationController
 
     @articles = Article.order("date_publish desc").page(params[:page])
   end
+
+  def feed
+    @articles = Article.all
+  end
 end

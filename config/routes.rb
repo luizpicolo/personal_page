@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/publications' => 'publications#index', as: :publications
   get '/contacts' => 'contacts#index', as: :contacts
 
+  get 'rss.xml' => 'home#feed', :defaults => { :format => 'rss' }, as: :feed
+
 end
