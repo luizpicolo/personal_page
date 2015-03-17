@@ -43,10 +43,14 @@
   }
 }
 
-.fa-rss, .fa-twitter, .fa-facebook {
-  position: relative;
-  font-size: 20px !important;
-  top: 10px;
-  margin-right: 3px;
-  left: 20px;
+.social-links {
+  position: fixed;
+  font-size: 30px !important;
+  bottom: 10px;
+  left: 10px;
+
+  i {
+    margin-top: 10px;
+    display: block;
+  }
 }

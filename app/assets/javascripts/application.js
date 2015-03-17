@@ -15,5 +15,6 @@
 //= require jquery_ujs
 //= require alert_message
 //= require disqus_rails
+//= require bootstrap-sprockets
 //= require main
 //= require turbolinks

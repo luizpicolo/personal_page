@@ -42,21 +42,10 @@
 				<% end %>
 			</hgroup>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-9">
 			<nav id="nav">
 				<%= render "layouts/links" %>
 			</nav>
-		</div>
-		<div class"col-md-1">
-			<%= link_to "http://www.twitter.com/luizpicolo_", :target => "blank" do %>
-			<i class="fa fa-twitter"></i>
-			<% end %>
-			<%= link_to "http://www.facebook.com.br/luizpicolo", :target => "blank" do %>
-			<i class="fa fa-facebook"></i>
-			<% end %>
-			<%= link_to feed_path, :target => "blank" do %>
-			<i class="fa fa-rss"></i>
-			<% end %>
 		</div>
 	</header>
 
@@ -87,5 +76,21 @@
 			<%= t("created_by")%> Luiz Picolo
 		</div>
 	</footer>
+
+	<div class="social-links">
+		<%= link_to "http://www.github.com/luizpicolo", :target => "blank" do %>
+		<i class="fa fa-github" data-toggle="tooltip" data-placement="right" title="Github"></i>
+		<% end %>
+		<%= link_to "http://www.twitter.com/luizpicolo_", :target => "blank" do %>
+		<i class="fa fa-twitter" data-toggle="tooltip" data-placement="right" title="Twitter"></i>
+		<% end %>
+		<%= link_to "http://www.facebook.com.br/luizpicolo", :target => "blank" do %>
+		<i class="fa fa-facebook" data-toggle="tooltip" data-placement="right" title="Facebook"></i>
+		<% end %>
+		<%= link_to feed_path, :target => "blank" do %>
+		<i class="fa fa-rss" data-toggle="tooltip" data-placement="right" title="Feed"></i>
+		<% end %>
+	</div>
+
 </body>
 </html>

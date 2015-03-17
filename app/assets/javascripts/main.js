@@ -8,3 +8,7 @@ $(document).ready(function(){
     $('a[href="/'+ location[1] +'"]').addClass('active');
   })();
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
