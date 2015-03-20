@@ -14,7 +14,6 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'disqus_rails'
 gem 'friendly_id'
-gem "font-awesome-rails"
 gem 'gravatar-ultimate'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
