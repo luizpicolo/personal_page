@@ -371,7 +371,6 @@ DEPENDENCIES
   disqus_rails
   factory_girl_rails
   faker
-  font-awesome-rails
   friendly_id
   gravatar-ultimate
   jbuilder (~> 2.0)
