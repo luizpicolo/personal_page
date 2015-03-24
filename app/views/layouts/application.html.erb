@@ -17,17 +17,6 @@
 	<%= javascript_include_tag 'modernizr' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-	<%=
-		display_meta_tags :og => {
-		  :title    => @title,
-			:type			=> "article",
-			:site_name => "Luiz Picolo - Desenvolvimento Web",
-			:image => @gravatar,
-		  :url      => request.original_url,
-			:description => @description
-		}
-	%>
-
 	<%= disqus_init %>
 </head>
 

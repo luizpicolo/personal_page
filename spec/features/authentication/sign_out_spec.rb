@@ -8,6 +8,6 @@ feature 'Sign out' do
 
     sign_out
 
-    page.should have_content('Saiu com sucesso.')
+    expect(page).to have_content('Saiu com sucesso.')
   end
 end
