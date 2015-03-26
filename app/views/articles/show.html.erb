@@ -5,7 +5,7 @@
   </div>
   <% @article.article_attachments.where(:hightlight => false).find_each do |image| %>
   <figure>
-    <%= image_tag image.image_url(:hightlight), :width => 650 %>
+    <%= image_tag image.image_url(:hightlight), :class => "img-responsive" %>
     <figcaption><%= image.title %></figcaption>
   </figure>
   <% end %>
