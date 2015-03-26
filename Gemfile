@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 ruby "2.2.0"
 
 gem 'alert_message'
-gem 'bootstrap-wysihtml5-rails', github: 'nerian/bootstrap-wysihtml5-rails'
-gem 'bootstrap-wysihtml5-rails-font-awesome', '~> 0.3.1.25'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'carrierwave'
 gem 'cancan'
