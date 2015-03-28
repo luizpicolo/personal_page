@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.0"
+ruby '2.2.0'
 
 gem 'alert_message'
 gem 'bootstrap-sass', '~> 3.3.3'
@@ -30,20 +30,24 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'capybara'
-  gem "codeclimate-test-reporter", :require => nil
+  gem 'codeclimate-test-reporter', require: nil
   gem 'database_rewinder'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'mysql2'
   gem 'rspec-rails', '~> 3.1.0'
-  gem "rubycritic", :require => false
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
-  gem 'simplecov', :require => false
   gem 'spring'
+
+  # quality code
+  gem 'metric_fu'
+  gem 'simplecov', require: false
+  gem 'rubycritic', require: false
+  gem 'rubocop', require: false
 end
 
 group :production do
