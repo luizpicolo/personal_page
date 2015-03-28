@@ -1,5 +1,6 @@
+# Model Portfolio
 class Portfolio < ActiveRecord::Base
   include DateHelper
 
-  validates :title, :link, :presence => true
+  validates :title, :link, presence: true
 end

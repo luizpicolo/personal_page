@@ -1,3 +1,4 @@
+# Model contact
 class Contact < ActiveRecord::Base
-  validates :title, :link, :presence => true
+  validates :title, :link, presence: true
 end
