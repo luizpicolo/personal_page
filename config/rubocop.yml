@@ -1,0 +1,33 @@
+AllCops:
+  Includes:
+    - '../**/*.rake'
+
+# Avoid parameter lists longer than five parameters.
+ParameterLists:
+  Max: 3
+  CountKeywordArgs: true
+
+# Avoid more than `Max` levels of nesting.
+BlockNesting:
+  Max: 3
+
+HashSyntax:
+  Enabled: false
+
+Blocks:
+  Enabled: false
+
+SpaceInsideBrackets:
+  Enabled: false
+
+Documentation:
+  Enabled: false # reek already checks this and rubocop requires duplicate docs
+
+SingleLineMethods:
+  Enabled: false
+
+LineLength:
+  Max: 88 # the offending lines are in specs, sadly this means global disabling for now 
+
+MethodLength:
+  Max: 12 # reek performs these checks anyway
