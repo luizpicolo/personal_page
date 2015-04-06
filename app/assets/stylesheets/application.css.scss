@@ -16,19 +16,20 @@
  */
 
 // Bootstrap
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 // devise
-@import "project/devise";
+@import 'project/devise';
 
 // project
-@import "project/variables";
-@import "project/spacings";
+@import 'project/variables';
+@import 'project/spacings';
+@import 'project/media_queries';
 
-@import "project/default";
-@import "project/footer";
-@import "project/header";
-@import "project/pagination";
-@import "project/typography";
-@import "project/articles";
+@import 'project/default';
+@import 'project/footer';
+@import 'project/header';
+@import 'project/pagination';
+@import 'project/typography';
+@import 'project/articles';
