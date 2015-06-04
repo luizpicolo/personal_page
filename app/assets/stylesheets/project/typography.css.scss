@@ -28,56 +28,37 @@ small {
 
 
 // titles
-%title {
+.title {
   color: $gray-2;
 }
 
 .title-1 {
-  @extend %title;
+  color: $gray-2;
   font-size: 18px;
   margin: 20px 0 0;
 }
 
 .title-2 {
-  @extend %title;
+  color: $gray-2;
   font-size: 15px;
 }
 
 .title-3 {
-  @extend %title;
+  color: $gray-2;
   font-size: 26px;
 }
 
 .title-4 {
-  @extend %title;
+  color: $gray-2;
 }
 
 .title-5 {
-  @extend %title;
+  color: $gray-2;
 }
 
 .title-6 {
-  @extend %title;
+  color: $gray-2;
 }
-
-
-// text
-%text {
-
-}
-
-.text-1 {
-  @extend %text;
-}
-
-.text-2 {
-  @extend %text;
-}
-
-.text-3 {
-  @extend %text;
-}
-
 
 .text-left {
   text-align: left;
