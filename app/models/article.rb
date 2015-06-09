@@ -20,7 +20,7 @@ class Article < ActiveRecord::Base
 
     extensions = {
       autolink: true, superscript: true, highlight: true,
-      footnotes: true, disable_indented_code_blocks: true
+      footnotes: true, disable_indented_code_blocks: false
     }
 
     renderer = Redcarpet::Render::HTML.new(options)
