@@ -20,6 +20,7 @@ gem 'libv8', '3.16.14.6'
 gem 'kaminari'
 gem 'modernizr-rails'
 gem 'meta-tags'
+gem 'pg'
 gem 'rails', '4.2.1'
 gem 'rails-i18n'
 gem 'rails_admin', git: 'git://github.com/luizpicolo/rails_admin.git'
@@ -38,7 +39,6 @@ group :development, :test do
   gem 'database_rewinder'
   gem 'factory_girl_rails'
   gem 'faker'
-  gem 'mysql2'
   gem 'rspec-rails', '~> 3.1.0'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
@@ -53,7 +53,6 @@ end
 
 group :production do
   gem 'passenger'
-  gem 'pg'
-  gem 'therubyracer'
+  # gem 'therubyracer'
   gem 'rails_12factor'
 end

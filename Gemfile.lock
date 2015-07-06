@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/luizpicolo/rails_admin.git
-  revision: a57ace6579286a9eb86536d5bf9c133e90dea95b
+  revision: e3403a654ab152306a308f3b0deacdccd9053a1b
   specs:
-    rails_admin (0.6.8)
+    rails_admin (1.0.0.beta)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
       font-awesome-rails (>= 3.0, < 5)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/sprockets-rails.git
-  revision: 7bd1560360248ab11d8aba81e558bd817935c692
+  revision: 34ae184693db41b4e3338940073af9d728881a9c
   specs:
     sprockets-rails (3.0.0.beta1)
       actionpack (>= 4.0)
@@ -76,7 +76,7 @@ GEM
     ast (2.0.0)
     astrolabe (1.3.0)
       parser (>= 2.2.0.pre.3, < 3.0)
-    autoprefixer-rails (5.2.0.1)
+    autoprefixer-rails (5.2.1)
       execjs
       json
     aws_cf_signer (0.1.3)
@@ -91,9 +91,9 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.5)
+    bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
-      sass (>= 3.2.19)
+      sass (>= 3.3.0)
     builder (3.2.2)
     cancan (1.6.10)
     cane (2.6.2)
@@ -171,7 +171,7 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     fattr (2.2.2)
-    ffi (1.9.8)
+    ffi (1.9.10)
     flay (2.4.0)
       ruby_parser (~> 3.0)
       sexp_processor (~> 4.0)
@@ -194,7 +194,7 @@ GEM
       domain_name (~> 0.5)
     i18n (0.7.0)
     ice_nine (0.11.1)
-    jbuilder (2.3.0)
+    jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.4)
@@ -247,17 +247,16 @@ GEM
     mini_portile (0.6.2)
     minitest (5.7.0)
     modernizr-rails (2.7.1)
-    multi_json (1.11.1)
-    mysql2 (0.3.18)
+    multi_json (1.11.2)
     nested_form (0.3.2)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     parallel (1.6.0)
-    parser (2.2.2.5)
+    parser (2.2.2.6)
       ast (>= 1.1, < 3.0)
-    passenger (5.0.10)
+    passenger (5.0.13)
       rack
       rake (>= 0.8.1)
     pg (0.18.2)
@@ -317,12 +316,11 @@ GEM
       activesupport (>= 3.0.0)
       rake
     redcard (1.1.0)
-    redcarpet (3.3.1)
+    redcarpet (3.3.2)
     reek (1.6.5)
       parser (~> 2.2.0.pre.7)
       rainbow (>= 1.99, < 3.0)
       unparser (~> 0.2.2)
-    ref (1.0.5)
     remotipart (1.2.1)
     require_all (1.3.2)
     responders (2.1.0)
@@ -349,7 +347,7 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
-    rubocop (0.32.0)
+    rubocop (0.32.1)
       astrolabe (~> 1.3)
       parser (>= 2.2.2.5, < 3.0)
       powerpack (~> 0.1)
@@ -366,7 +364,7 @@ GEM
       virtus (~> 1.0)
     rubyzip (1.1.7)
     safe_yaml (1.0.4)
-    sass (3.4.14)
+    sass (3.4.15)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -398,9 +396,6 @@ GEM
     spring (1.3.6)
     sprockets (3.2.0)
       rack (~> 1.0)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -463,7 +458,6 @@ DEPENDENCIES
   meta-tags
   metric_fu
   modernizr-rails
-  mysql2
   passenger
   pg
   rails (= 4.2.1)
@@ -481,6 +475,5 @@ DEPENDENCIES
   simplecov
   spring
   sprockets-rails!
-  therubyracer
   turbolinks
   uglifier (>= 1.3.0)
