@@ -53,6 +53,6 @@ end
 
 group :production do
   gem 'passenger'
-  # gem 'therubyracer'
+  gem 'therubyracer'
   gem 'rails_12factor'
 end
