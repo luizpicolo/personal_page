@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.2.1'
 
 gem 'alert_message'
 gem 'bootstrap-sass', '~> 3.3.3'
@@ -16,7 +16,6 @@ gem 'gravatar-ultimate'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
-gem 'libv8', '3.16.14.6'
 gem 'kaminari'
 gem 'modernizr-rails'
 gem 'meta-tags'
@@ -43,12 +42,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
   gem 'spring'
-
-  # quality code
-  gem 'metric_fu'
-  gem 'simplecov', require: false
-  gem 'rubycritic', require: false
-  gem 'rubocop', require: false
 end
 
 group :production do

@@ -61,8 +61,10 @@
 					<%= t("follow_me")%>
 				</div>
 				<ul>
-					<% Contact.order("title asc").each do |contact|%>
-					<li><%= link_to contact.title, contact.link %></li>
+					<% cache do %>
+						<% Contact.order("title asc").each do |contact|%>
+							<li><%= link_to contact.title, contact.link %></li>
+						<% end %>
 					<% end %>
 				</ul>
 			</div>
