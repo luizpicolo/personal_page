@@ -1,19 +1,19 @@
-development: &dev
-  adapter: mysql2
-  encoding: utf8
-  database: personal_page_dev
-  pool: 5
-  username: root
-  password: root
-  socket: /var/run/mysqld/mysqld.sock
-
-test:
+development:
+  host: localhost
   adapter: postgresql
   encoding: unicode
-  database: personal_page_test
+  database: personal_page
   pool: 5
   username: postgres
-  password:
+  password: postgres
 
-production:
-  <<: *dev
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: personal_page
+  pool: 5
+  username: postgres
+  password: postgres
+
+production: &dev

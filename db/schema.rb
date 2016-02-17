@@ -13,89 +13,92 @@
 
 ActiveRecord::Schema.define(version: 20150223202843) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "abouts", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.text     "body",       limit: 65535
-    t.string   "image",      limit: 255
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "title"
+    t.text     "body"
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "article_attachments", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.string   "image",      limit: 255
-    t.boolean  "hightlight", limit: 1,   default: false
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
-    t.integer  "article_id", limit: 4
+    t.string   "title"
+    t.string   "image"
+    t.boolean  "hightlight", default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.integer  "article_id"
   end
 
   create_table "articles", force: :cascade do |t|
-    t.string   "title",        limit: 255
-    t.string   "summary",      limit: 255
+    t.string   "title"
+    t.string   "summary"
     t.date     "date_publish"
-    t.text     "body",         limit: 65535
-    t.string   "slug",         limit: 255
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.text     "body"
+    t.string   "slug"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   add_index "articles", ["slug"], name: "index_articles_on_slug", using: :btree
 
   create_table "articles_categories", id: false, force: :cascade do |t|
-    t.integer "article_id",  limit: 4, null: false
-    t.integer "category_id", limit: 4, null: false
+    t.integer "article_id",  null: false
+    t.integer "category_id", null: false
   end
 
   add_index "articles_categories", ["article_id", "category_id"], name: "index_articles_categories_on_article_id_and_category_id", using: :btree
   add_index "articles_categories", ["category_id", "article_id"], name: "index_articles_categories_on_category_id_and_article_id", using: :btree
 
   create_table "categories", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.string   "slug",       limit: 255
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "slug"
   end
 
   add_index "categories", ["slug"], name: "index_categories_on_slug", using: :btree
 
   create_table "contacts", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.string   "link",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "title"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "portfolios", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.string   "link",       limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string   "title"
+    t.string   "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "publications", force: :cascade do |t|
-    t.string   "title",        limit: 255
+    t.string   "title"
     t.date     "date_publish"
-    t.text     "description",  limit: 65535
-    t.string   "arquive",      limit: 255
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.text     "description"
+    t.string   "arquive"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  limit: 255, default: "",   null: false
-    t.string   "encrypted_password",     limit: 255, default: "",   null: false
-    t.string   "reset_password_token",   limit: 255
+    t.string   "email",                  default: "",   null: false
+    t.string   "encrypted_password",     default: "",   null: false
+    t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          limit: 4,   default: 0,    null: false
+    t.integer  "sign_in_count",          default: 0,    null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip",     limit: 255
-    t.string   "last_sign_in_ip",        limit: 255
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "admin",                  limit: 1,   default: true
+    t.boolean  "admin",                  default: true
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

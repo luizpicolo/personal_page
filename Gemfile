@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+ruby '2.3.0'
 
 gem 'alert_message'
 gem 'bootstrap-sass', '~> 3.3.3'
@@ -20,7 +20,7 @@ gem 'kaminari'
 gem 'modernizr-rails'
 gem 'meta-tags'
 gem 'pg'
-gem 'rails', '4.2.1'
+gem 'rails'
 gem 'rails-i18n'
 gem 'rails_admin', git: 'git://github.com/luizpicolo/rails_admin.git'
 gem 'randumb'
