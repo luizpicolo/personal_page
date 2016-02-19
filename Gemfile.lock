@@ -149,6 +149,7 @@ GEM
       rack
     haml (4.0.7)
       tilt
+    htmlcompressor (0.2.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -212,6 +213,7 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
+    rails-env (1.0.3)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails-i18n (4.0.8)
@@ -326,6 +328,7 @@ DEPENDENCIES
   faker
   friendly_id
   gravatar-ultimate
+  htmlcompressor (~> 0.2.0)
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
@@ -335,6 +338,7 @@ DEPENDENCIES
   passenger
   pg
   rails
+  rails-env
   rails-i18n
   rails_12factor
   rails_admin!
