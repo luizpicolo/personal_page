@@ -123,8 +123,6 @@ GEM
       warden (~> 1.2.3)
     devise-bootstrap-views (0.0.7)
     diff-lcs (1.2.5)
-    disqus_rails (0.0.6)
-      rails
     docile (1.1.5)
     domain_name (0.5.20160128)
       unf (>= 0.0.5, < 1.0.0)
@@ -323,7 +321,6 @@ DEPENDENCIES
   database_rewinder
   devise
   devise-bootstrap-views
-  disqus_rails
   factory_girl_rails
   faker
   friendly_id
